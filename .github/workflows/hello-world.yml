@@ -1,0 +1,15 @@
+
+name: hello-world.yml
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  hello-job:
+
+    runs-on: ubuntu-latest
+    steps:
+     - name: Echo text
+       run: echo "Hello, world!"
